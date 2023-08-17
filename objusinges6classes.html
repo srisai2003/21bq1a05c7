@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            creating object using ES-6 classes
+        </title>
+    </head>
+    <body>
+        <script type="text/kavascript">
+            class Box{
+                constructor(l,b,h){
+                    this.l = l;
+                    this.b = b;
+                    this.h = h;
+                }
+                display(){
+                    console.log(`length:${this.l}`);
+                    console.log(`breadth:${this.b}`);
+                    console.log(`height:${this.h}`);
+                }
+                volume(){
+                    return this.l*this.b*this.h;
+                }
+            }
+            const obj = new Box(10,20,30);
+            obj.display();
+            console.log(`volume of box is:${obj.volume()}`);
+            console.log(obj);
+        </script>
+    </body>
+</html>

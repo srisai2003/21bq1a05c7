@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            creating object using create method
+        </title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            let obj ={
+                l:20,
+                b:30,
+                h:40,
+                display:function(){
+                    console.log(`length:${this.l}`);
+                    console.log(`breadth:${this.b}`);
+                    console.log(`height:${this.h}`);
+                },
+                volume:function(){
+                    return this.l*this.b*this.h;
+                }
+            };
+            const obj1 = object.create(obj);
+            console.log(obj);
+            console.log(obj1);
+            obj.display();
+            console.log(`volume of box is :${obj1.volume()}`);
+        </script>
+    </body>
+</html>
